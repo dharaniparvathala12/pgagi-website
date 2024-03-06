@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState } from 'react';
 import Calendlylink from '../buttons/callbutton';
 import Image from 'next/image';
@@ -46,14 +45,6 @@ export default function Navbar() {
         setSelectedOption('AI resources');
     };
 
-   
-
-
-
-
-
-
-
     return (
         
         
@@ -79,7 +70,7 @@ export default function Navbar() {
                 <div className="header-links contents font-semibold text-base lg:text-base ">
                     <ul className="flex items-center ml-4  lg:ml-5 xl:ml-2 lg:mr-8">
                         <li className="p-2.5 xl:p-6 text-center">
-                            <a href="" style={{textDecoration: 'none'}}>
+                            <a href="/projects" style={{textDecoration: 'none'}}>
                                 <span>Our Projects</span>
                             </a>
                         </li>

@@ -59,11 +59,10 @@ const Services = () => {
         <div className="py-10 relative">
           <div className="container mx-auto w-3/5">
           <div className="mb-auto text-center max-w-[400px] mx-auto">
-    <h1 className="text-4xl font-bold text-black dark:text-white"> {/* Increased font size to text-6xl */}
-        Here's how we make <br /> {/* Added line break */}
-        products grow
+    <h1 className="mt-2 text-4xl font-bold text-black mb-5"> {/* Increased font size to text-6xl */}
+        Here's how we make products grow
     </h1>
-    <p className="text-sm text-black dark:text-gray-400"> {/* Increased font size to text-sm */}
+    <p className="text-sm text-black dark:text-gray-400 mb-2"> {/* Increased font size to text-sm */}
         Our AI design process
     </p>
 </div>
@@ -74,7 +73,7 @@ const Services = () => {
                   key={service.id}
                   data-aos="zoom-in"
                   data-aos-duration="300"
-                  className="rounded-2xl mb-5 bg-white dark:bg-gray-700 relative shadow-xl duration-high group h-[320px] transition-transform hover:-translate-y-2 flex flex-col justify-between" 
+                  className="rounded-2xl mb-5 bg-white  relative shadow-xl duration-high group h-[320px] transition-transform hover:-translate-y-2 flex flex-col justify-between" 
                   onClick={() => handleButtonClick(service.id)}
                 >
                   <div className="mt-5 h-[240px] w-[240px] flex items-center justify-center overflow-hidden mx-auto"> 
