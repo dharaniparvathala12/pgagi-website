@@ -7,6 +7,7 @@ import Cards from "./components/cards";
 import React from "react";
 import PartnerCompanies from "./components/partner";
 
+
 export default function Page() {
   return (
     <div>

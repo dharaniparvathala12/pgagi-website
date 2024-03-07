@@ -2,6 +2,7 @@ import { getPostBySlug } from "../../../lib/mdx"
 import Navbar from '../../components/navbar';  // Import Navbar if it's not already imported
 
 
+
 const getPageContent = async slug => {
   const { meta, content } = await getPostBySlug(slug)
   return { meta, content }

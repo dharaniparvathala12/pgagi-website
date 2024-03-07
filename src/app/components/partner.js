@@ -10,7 +10,7 @@ const PartnerCompanies = () => {
   ];
 
   return (
-    <div className="bg-white pb-8">
+    <div className="bg-white pb-8 mt-20">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center ">
           <h2 className="text-2xl text-gray-600 pb-5">Partnered with Inovators like</h2>

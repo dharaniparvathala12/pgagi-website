@@ -51,7 +51,7 @@ export default function Navbar() {
              <div>
             {/* Thin horizontal blue line */}
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '30px', backgroundColor: '#2D63D7', width: '100%' }}>
-        <span style={{ marginRight: '10px' }} className='text-white'>Our Products</span>
+        <span style={{ marginRight: '10px' }} className='text-white'>AI Calling Agent</span>
         <div>
             <span style={{ fontWeight: 'bold' }} className='text-white' >Learn more</span>
             
@@ -270,7 +270,7 @@ export default function Navbar() {
                         </div>
                         <div className="py-4 px-4 flex items-start w-full md:w-1/3 relative">
                             <div className="h-auto flex-grow">
-                                <div className='hover:bg-[#F5F6FC]  mb-6 group mb-6'>
+                                <div className='hover:bg-[#F5F6FC]   group mb-6'>
                                     <div className="flex items-center">
                                         <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-2 mr-2">AI Strategy & Optimization Review:
 </h1>
@@ -295,75 +295,29 @@ export default function Navbar() {
 
             {/* Industries Section */}
             {showIndustries && (
-                <div className="bg-white border-b-2 hidden md:flex md:justify-evenly md:px-8 lg:px-12 xl:px-24" onMouseLeave={() => setShowIndustries(false)}>
-                   
-                    <section className="text-gray-600 body-font mt-0 flex flex-wrap justify-center">
-                        <div className="py-8 px-4 flex items-start hover:bg-[#F5F6FC]  mb-6 group">
-                            <div className="h-full flex-grow lg:w-1/3">
-                                
+  <div className="bg-white border-b-2 hidden md:flex md:flex-wrap md:justify-evenly md:px-8 lg:px-12 xl:px-24" onMouseLeave={() => setShowIndustries(false)}>
+    <section className="text-gray-600 body-font mt-0 grid grid-cols-3 gap-x-40 gap-y-0 justify-center">
+      {[
+        'Fintech', 'Chemical', 'SaaS', 'Edtech', 'Health',
+        'Commerce', 'Security', 'Blockchain', 'Gaming',
+        'Agritech', 'Proptech', 'Insurtech', 'Biotech', 'Cleantech',
+        'Mobility', 'Foodtech', 'Medtech', 'Legaltech'
+      ].map((industry, index) => (
+        <div key={index} className="py-1 px-4 flex items-start hover:bg-[#F5F6FC] mb-6 group">
+          <div className="h-full flex-grow">
+            <div className="flex items-center">
+              <h1 className="title-font text-md font-bold text-gray-600 hover:text-black mb-3">{industry}</h1>
+             
+            </div>
+          </div>
+        </div>
+      ))}
+    </section>
+  </div>
+)}
 
-                                <div className="flex items-center">
-    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>Fintech</h1>
-    <img
-        src="/images/rightarrow.png"
-        alt="Arrow"
-        style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-        className='group-hover:translate-x-1'
-    />
-</div>
-                                <p className="text-gray-600 hover:text-black    leading-relaxed text-sm mb-5">Making financial product crystal <br></br> clear.</p>
-                            </div>
-                        </div>
-                        <div className="py-8 px-4 flex items-start hover:bg-[#F5F6FC]  mb-6 group">
-                            <div className="h-full flex-grow lg:w-1/3">
-                                
 
-                                <div className="flex items-center">
-    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>AI</h1>
-    <img
-        src="/images/rightarrow.png"
-        alt="Arrow"
-        style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-        className='group-hover:translate-x-1'
-    />
-</div>
-                                <p className="text-gray-600 hover:text-black    text-sm leading-relaxed mb-5">Defining the future of humanity & <br></br>digital experience</p>
-                            </div>
-                        </div>
-                        <div className="py-8 px-4 flex items-start hover:bg-[#F5F6FC]  mb-6 group">
-                            <div className="h-full flex-grow lg:w-1/3">
-                            <div className="flex items-center">
-    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>SaaS</h1>
-    <img
-        src="/images/rightarrow.png"
-        alt="Arrow"
-        style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-        className='group-hover:translate-x-1'
-    />
-</div>
-                               
-                                <p className="text-gray-600 hover:text-black    leading-relaxed text-sm mb-5">Defining Analytics,AI platform,<br></br>dashboards</p>
-                            </div>
-                        </div>
-                        <div className="py-8 px-4 flex items-start hover:bg-[#F5F6FC]  mb-6 group">
-                            <div className="h-full flex-grow lg:w-1/3">
 
-                            <div className="flex items-center">
-    <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>Edtech</h1>
-    <img
-        src="/images/rightarrow.png"
-        alt="Arrow"
-        style={{ width: '20px', height: '20px', transition: 'transform 0.1s' }}
-        className='group-hover:translate-x-1'
-    />
-</div>
-                               
-                                <p className="text-gray-600 hover:text-black    leading-relaxed  text-sm mb-5">Making educational platforms fun <br></br>and engaging </p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            )}
 
 
             {/* About Us Section */}
@@ -386,7 +340,7 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-                    <div className="py-8 px-8  flex items-start justify-center" style={{ marginLeft: '1rem', padding: '2rem', maxWidth: '400px', borderRadius: '8px' }} onMouseEnter={() => toggleAboutUs('Our core principles and beliefs')}>
+                    {/* <div className="py-8 px-8  flex items-start justify-center" style={{ marginLeft: '1rem', padding: '2rem', maxWidth: '400px', borderRadius: '8px' }} onMouseEnter={() => toggleAboutUs('Our core principles and beliefs')}>
                         <div className="h-full flex-grow">
                             <div className="flex hover:bg-[#F5F6FC]  mb-6 group items-center">
                                 <h1 className="title-font text-md font-bold text-gray-600 hover:text-black     mb-3" style={{ marginRight: '10px' }}>Our core principles and beliefs</h1>
@@ -398,7 +352,7 @@ export default function Navbar() {
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
