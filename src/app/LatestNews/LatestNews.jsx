@@ -52,3 +52,30 @@ const LatestNews = [
 ];
 
 export default LatestNews;
+
+// import React from 'react';
+// import Link from 'next/link';
+// import { getAllPostsMeta } from '../../lib/news_mdx';
+
+// const LatestNews = ({ numberOfPosts }) => {
+//   const posts = getAllPostsMeta();
+
+//   return (
+//     <div className="latest-news-container">
+//       <h2>Latest News</h2>
+//       {posts.slice(-numberOfPosts).map(post => (
+//         <div key={post.title}>
+//           <Link href={`/news/${post.slug}`}>
+           
+//               <h3>{post.title}</h3>
+            
+//           </Link>
+//           <p>By {post.author}</p>
+         
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default LatestNews;

@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    './mdx-components.jsx'
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}"
   ],
 
     theme: {
@@ -22,7 +21,7 @@ module.exports = {
           // Base colors with names
        
           // Custom usage colors with names
-          'primary': '#2d63d7', // Primary Blue - Primary buttons, active links
+          'primary': '#14213d', // Primary Blue - Primary buttons, active links
           secondary: '#6c757d', // Secondary Gray - Secondary text, borders
           success: '#28a745', // Success Green - Success messages, confirm buttons
           info: '#17a2b8', // Info Cyan - Informational alerts

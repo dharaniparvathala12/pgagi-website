@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllProjectsMeta } from '../../lib/project_mdx';
 import Navbar from '../components/navbar';
+import Image from 'next/image';
 
 const Page = async () => {
   const projects = await getAllProjectsMeta();
@@ -22,9 +23,11 @@ const Page = async () => {
                 className='w-full h-65 sm:w-1/3 md:w-1/3 lg:w-1/3 xl:w-1/3 p-4'
               >
                 <div className='rounded-md shadow-md'>
-                  <img
+                  <Image
                     src={project.thumbnail}
                     alt={project.title}
+                    width={400}
+                    height={400}
                     className='w-full h-45 object-cover rounded-md mb-4'
                   />
                   <h3 className='text-xl font-semibold'>{project.title}</h3>

@@ -3,7 +3,7 @@ import LatestNews from '../LatestNews/LatestNews';
 
 export default function LatestTrends() {
   return (
-    <div className="w-full xl:w-3/4">
+    <div className="w-full m-0 xl:w-4/5">
       <h6 className="text-lg font-semibold mb-4 ml-4">Latest Trends & News</h6>
       <div>
         {LatestNews.map((latest, index) => (
