@@ -9,6 +9,7 @@ import About from "./components/aboutus";
 
 
 
+
 import React from "react";
 import PartnerCompanies from "./components/partner";
 // import Mobilenavbar from "./components/mobilenavbar";
@@ -28,8 +29,9 @@ export default function Page() {
         <Design />
         <Cards />
         
+       
         <Footer />
-        
+       
       </div>
      
       

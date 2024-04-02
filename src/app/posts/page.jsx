@@ -1,10 +1,11 @@
 import { getAllPostsMeta } from '../../lib/mdx';
 import Navbar from '../components/navbar';
-import { MdSearch } from 'react-icons/md';
+// import { MdSearch } from 'react-icons/md';
 import LatestTrends from '../components/LatestTrends';
 import LatestNewsSlider from '../LatestNews/LatestNewsSlider';
 import Image from 'next/image';
 import Link from 'next/link';
+
 
 const Page = async () => {
   const posts = await getAllPostsMeta();
@@ -38,8 +39,10 @@ const Page = async () => {
             Explore Blogs here!
           </p>
         </div>
+        
+        {/* seacrh bar */}
 
-        <div className="relative flex sm:items-center md:mr-24 md:ml-20 ml-16 sm:mr-32">
+        {/* <div className="relative flex sm:items-center md:mr-24 md:ml-20 ml-16 sm:mr-32">
           <div className="absolute top-2 left-2">
             <MdSearch className="h-6 w-6 text-gray-600" />
           </div>
@@ -48,7 +51,7 @@ const Page = async () => {
             placeholder="What you're looking for?"
             className="w-64 sm:w-80 md:w-96 p-2 pl-8 pr-4 items-center rounded-full bg-white border-none focus:outline-none"
           />
-        </div>
+        </div> */}
       </div>
 
       <section className='py-4 sm:px-8'>
@@ -85,7 +88,7 @@ const Page = async () => {
                       alt={post.title}
                       width={400}
                       height={400}
-                      className='w-full h-auto sm:h-52 object-cover mb-4 rounded-3xl'
+                      className='w-full h-auto sm:h-60 object-cover mb-4 rounded-3xl'
                     />
                     <h3 className='text-lg font-semibold mb-1'>{post.title}</h3>
                     <div className='flex items-center text-gray-400'>

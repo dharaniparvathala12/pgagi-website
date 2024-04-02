@@ -1,81 +1,50 @@
 const LatestNews = [
     {
-        title: 'Advancements in Natural Language Processing',
-        author: 'John Smith',
-        link: 'https://example.com/nlp-advancements',
+        title: 'Large language models could ‘revolutionise the finance sector within two years’',
+        author: 'Duncan MacRae',
+        link: 'https://www.artificialintelligence-news.com/2024/03/27/large-language-models-could-revolutionsise-the-finance-sector-within-two-years/',
       },
       {
-        title: 'Breakthroughs in Computer Vision Technology',
-        author: 'Jane Doe',
-        link: 'https://example.com/computer-vision-breakthroughs',
+        title: 'Navigating the Challenges and Opportunities of Synthetic Voices',
+        author: 'OpenAI',
+        link: 'https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices',
       },
       {
-        title: 'Ethical Considerations in AI Development',
-        author: 'Alex Johnson',
-        link: 'https://example.com/ethical-ai-considerations',
+        title: 'Taco Bell and Pizza Hut Are Going ‘AI-First,’ Yum’s New Tech Chief Says',
+        author: 'Belle Lin',
+        link: 'https://www.wsj.com/articles/taco-bell-and-pizza-hut-are-going-ai-first-yums-new-tech-chief-says-2f423d5e?mod=ai_news_article_pos3',
       },
       {
-        title: 'Applications of AI in Healthcare',
-        author: 'Emily Brown',
-        link: 'https://example.com/ai-in-healthcare-applications',
+        title: 'The Chess Master Trying to Propel Google’s AI Push',
+        author: 'Miles Kruppa',
+        link: 'https://www.wsj.com/tech/ai/the-chess-master-trying-to-propel-googles-ai-push-30c15788?mod=ai_news_article_pos2',
       },
       {
         title: 'Impact of AI on Cybersecurity',
         author: 'Michael Davis',
-        link: 'https://example.com/ai-cybersecurity-impact',
+        link: 'https://www.wsj.com/tech/dont-count-samsung-out-in-the-ai-memory-stakes-5d06cd76?mod=ai_news_article_pos4',
       },
       {
-        title: 'Future of AI and Robotics Integration',
-        author: 'Sophia White',
-        link: 'https://example.com/ai-robotics-future',
+        title: 'Don’t Count Samsung Out in the AI Memory Stakes',
+        author: 'Jacky Wong',
+        link: 'https://www.wsj.com/tech/dont-count-samsung-out-in-the-ai-memory-stakes-5d06cd76?mod=ai_news_article_pos4',
       },
       {
-        title: 'AI-driven Innovations in Education',
-        author: 'David Miller',
-        link: 'https://example.com/ai-innovations-education',
+        title: 'For Data-Guzzling AI Companies, the Internet Is Too Small',
+        author: 'Deepa Seetharaman',
+        link: 'https://www.wsj.com/tech/ai/ai-training-data-synthetic-openai-anthropic-9230f8d8?mod=ai_news_article_pos5',
       },
       {
-        title: 'Challenges in Quantum Computing with AI',
-        author: 'Emma Green',
-        link: 'https://example.com/quantum-computing-ai-challenges',
+        title: 'A Peter Thiel-Backed AI Startup, Cognition Labs, Seeks $2 Billion Valuation',
+        author: 'Berber Jin',
+        link: 'https://www.wsj.com/tech/ai/a-peter-thiel-backed-ai-startup-cognition-labs-seeks-2-billion-valuation-998fa39d?mod=ai_more_article_pos1',
       },
       {
-        title: 'AI for Sustainable Development Goals',
-        author: 'Daniel Taylor',
-        link: 'https://example.com/ai-sustainable-development-goals',
-      },
-      {
-        title: 'Latest Trends in AI Startups',
-        author: 'Sophie Anderson',
-        link: 'https://example.com/ai-startups-trends',
-      },
+        title: 'OpenAI Reveals Audio Feature That Clones Human Voices',
+        author: 'Ginger Adams Otis',
+        link: 'https://www.wsj.com/tech/ai/openai-reveals-audio-feature-that-clones-human-voices-30f066ea?mod=ai_more_article_pos3',
+      }
+      
 ];
 
 export default LatestNews;
-
-// import React from 'react';
-// import Link from 'next/link';
-// import { getAllPostsMeta } from '../../lib/news_mdx';
-
-// const LatestNews = ({ numberOfPosts }) => {
-//   const posts = getAllPostsMeta();
-
-//   return (
-//     <div className="latest-news-container">
-//       <h2>Latest News</h2>
-//       {posts.slice(-numberOfPosts).map(post => (
-//         <div key={post.title}>
-//           <Link href={`/news/${post.slug}`}>
-           
-//               <h3>{post.title}</h3>
-            
-//           </Link>
-//           <p>By {post.author}</p>
-         
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default LatestNews;

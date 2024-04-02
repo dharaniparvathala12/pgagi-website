@@ -75,11 +75,13 @@ const Footer = () => {
     About Us
   </Link>
 </li>
+<li>
+  <Link href="/posts" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">
+    Blogs
+  </Link>
+</li>
 
-
-                    <li>
-                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">Blog</a>
-                    </li>
+      
                     <li>
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap" href="https://github.com/PG-AGI">Github</a>
                     </li>
@@ -192,9 +194,11 @@ const Footer = () => {
     About Us
   </Link>
 </li>
-                    <li>
-                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">Blog</a>
-                    </li>
+<li>
+  <Link href="/posts" className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap">
+    Blogs
+  </Link>
+</li>
                     <li>
                       <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm whitespace-nowrap" href="https://github.com/PG-AGI">Github</a>
                     </li>

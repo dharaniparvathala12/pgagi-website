@@ -14,7 +14,7 @@ const Page =  async ({ params }) => {
   return (
     <>
       <Navbar />
-      <section>
+      <>
         {/* thumbnail and title */}
         <div
           className='relative h-80 bg-cover bg-center mb-8'
@@ -39,9 +39,9 @@ const Page =  async ({ params }) => {
        {/* author and date  */}
 
         {/* Fetching content */}
-        <div className='container py-4 prose'>{content}</div>
+        <div className='container items-center sm:max-w-3/4 md:max-w-3/4 lg:max-w-3/4 xl:max-w-3/4 2xl:max-w-3/4 py-4 prose'>{content}</div>
 
-      </section>
+      </>
     </>
   )
 }

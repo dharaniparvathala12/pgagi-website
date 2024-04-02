@@ -1,45 +1,35 @@
-import React from 'react';
-import Navbar from '@/app/components/navbar'; // Adjust the import path according to your file structure
-import Footer from '@/app/components/footer'; // Adjust the import path according to your file structure
-import '../src/app/globals.css';
+// pages/gallery.js
 import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import '../src/app/globals.css';
+import Footer from '@/app/components/footer';
+import Navbar from '@/app/components/navbar';
 
-const projects = [
-//   {
-//     img: '/images/project1.png',
-//     title: 'TalentHarbor AI',
-//     description:
-//       'An AI-driven recruitment platform that automates the entire hiring process, from sourcing to initial screenings, making recruitment efficient and user-friendly.',
-//   },
-//   {
-//     img: '/images/project2.png',
-//     title: 'TutorGPT',
-//     description:
-//       'An AI-powered educational assistant that supports personalized learning by providing instant access to information across a vast library of educational materials.',
-//   },
+const images = [
   {
-    img: '/images/project3.png',
-    title:'VoiceShop Communicator',
-    description:
-      'A voice-to-voice AI communication tool for Shopify stores, enabling real-time customer support and product inquiries through vocal interactions.',
+    src: '/images/frame1.png',
+    link: '/project1',
   },
   {
-    img: '/images/project4.png',
-    title: 'Interview Master AI',
-    description:
-      'An AI model capable of conducting real-time interviews on any topic, offering a realistic simulation of interview scenarios for practice and preparation.',
+    src: '/images/frame2.png',
+    link: '/project2',
   },
   {
-    img: '/images/project6.png',
-    title: 'AutoCaptioner Plus',
-    description:
-      'An automation tool for content creators that generates captions for photos and videos and posts them directly to social media, streamlining content management.',
+    src: '/images/frame3.png',
+    link: '/project3',
   },
   {
-    img: '/images/project5.png',
-    title: 'MetaMarket AI',
-    description:
-      'A metaverse-specific AI model that provides marketing and e-commerce strategies, helping businesses to understand and scale their operations in virtual environments.',
+    src: '/images/frame4.png',
+    link: '/project4',
+  },
+  {
+    src: '/images/frame6.png',
+    link: '/project5',
+  },
+  {
+    src: '/images/frame5.png',
+    link: '/project6',
   },
 ];
 
@@ -47,33 +37,27 @@ const Projects = () => {
   return (
     <>
       <Navbar />
-       <div className="bg-[#14213D] text-white text-center py-20">
+      <div className="bg-[#14213D] text-white text-center py-20">
         <h2 className="text-3xl font-bold">Discover our work</h2>
         <p className="text-sm mt-2">Elevate your success with tailored solutions crafted to exceed expectations.</p>
       </div>
-      <div className="flex flex-wrap justify-center gap-4 p-4">
-        {projects.map((project, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-            <div className="rounded-lg shadow-lg bg-black text-white flex flex-col" style={{ height: '600px' }}>
-              <div className="flex-shrink-0">
+      <div className="min-h-screen bg-white flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 p-4 w-3/5">
+          {images.map((image, index) => (
+            <Link key={index} href={image.link}>
+              <div className="overflow-hidden rounded-lg shadow-lg w-full h-100 cursor-pointer">
                 <Image
-                  src={project.img}
-                  alt={project.title}
-                  width={400}
-                  height={300} // Adjust the height to fit the card
-                  className="w-full object-cover rounded-t-lg"
+                  src={image.src}
+                  alt={`Image ${index + 1}`}
+                  width={150}
+                  height={150}
                   layout="responsive"
+                  objectFit="cover"
                 />
               </div>
-              <div className="flex-1 p-6 flex flex-col justify-between">
-                <div>
-                  <div className="font-bold text-xl mb-2">{project.title}</div>
-                  <p className="text-base">{project.description}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
       <Footer />
     </>

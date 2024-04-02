@@ -102,21 +102,21 @@ export default function HeroSection() {
                     <div className="text-center mt-10">
                         <div className=" text-mg md:text-md mt-4 leading-normal mb-4  bg-warning p-1 px-3 rounded-2xl w-fit">AI Adoptions typically result in:</div>
                         <div className="pb-10">
-                            <ul class="max-w-md space-y-3 text-gray-700 list-inside text-left">
-                                <li class="flex items-center">
-                                    <svg class="w-7 h-7 me-2 text-green-500  flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <ul className="max-w-md space-y-3 text-gray-700 list-inside text-left">
+                                <li className="flex items-center">
+                                    <svg className="w-7 h-7 me-2 text-green-500  flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                     </svg>
                                     35% efficiency gains in business processes.
                                 </li>
-                                <li class="flex items-center">
-                                    <svg class="w-7 h-7 me-2 text-green-500  flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <li className="flex items-center">
+                                    <svg className="w-7 h-7 me-2 text-green-500  flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                     </svg>
                                     150% ROI for every dollar invested.
                                 </li>
-                                <li class="flex items-center">
-                                    <svg class="w-7 h-7 me-2 text-green-500  flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <li className="flex items-center">
+                                    <svg className="w-7 h-7 me-2 text-green-500  flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                                     </svg>
                                     Decision-making speeds improved by 300%.

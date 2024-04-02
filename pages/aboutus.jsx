@@ -23,7 +23,12 @@ const About = () => {
 
             <p className="text-sm sm:text-md text-center mb-5">As toolmakers, we are at the forefront of this endeavour, channelling the potential of AI into tangible, beneficial forms that aim to enhance the world around us. In this spirit, we introduce Toingg, our foray into reimagining the way we communicate. Toingg is not just a product; it&apos;s a vision for an AI-powered calling agent designed to make connections more meaningful, efficient, and enjoyable. While still in its infancy, Toingg represents our commitment to pushing the boundaries of productivity and pleasure in technological interaction. Our success with Toingg could redefine the allocation of human creativity and intellect, tackling ever-greater challenges.</p>
 
-            <p className='text-sm sm:text-md text-center '>We are on the cusp of something transformative, fuelled by excitement and a shared vision for the future. If this journey resonates with you, we welcome you to join us. Reach out at hiring@pgagi.in, and let&apos;s explore the possibilities together.<br></br>With anticipation <br></br> Vivek, Sanjay, Shibajyoti, Parikshit, and the entire PGAGI team</p>
+            <p className='text-sm sm:text-md text-center'>
+  We are on the cusp of something transformative, fuelled by excitement and a shared vision for the future. If this journey resonates with you, we welcome you to join us. Reach out at <a href="mailto:hiring@pgagi.in">hiring@pgagi.in</a>, and let&apos;s explore the possibilities together.<br/><br/>
+  With anticipation <br/><br/>
+  <a href="https://www.linkedin.com/in/vivekjyoti-bhowmik-95016b13b/" target="_blank" rel="noopener noreferrer" className="underline">Vivek</a>, Sanjay, <a href="https://www.linkedin.com/in/shibajyoti-bhowmik-092489204/" target="_blank" rel="noopener noreferrer" className="underline">Shibajyoti</a>, Parikshit, and the entire PGAGI team
+</p>
+
           </div>
         </div>
       </div>
