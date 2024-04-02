@@ -31,7 +31,7 @@ export default function Page() {
       <Cards/>
       <Book/>
       {/* <Mobilenavbar/> */}
-      {/* <About/> */}
+      
       <Footer />
       
     </div>
