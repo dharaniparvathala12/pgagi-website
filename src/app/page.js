@@ -12,7 +12,7 @@ import React from "react";
 import PartnerCompanies from "./components/partner";
 import Mobilenavbar from "./components/mobilenavbar";
 import Background from "./bg";
-import Trending from "./components/Trending";
+import Trending from "./components/trending";
 
 export default function Page() {
   return (
