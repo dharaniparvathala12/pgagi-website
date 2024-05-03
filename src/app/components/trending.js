@@ -1,4 +1,4 @@
-import styles from "./trending.module";
+import styles from "./trending.module.scss";
 
 
 export default function Trending() {
